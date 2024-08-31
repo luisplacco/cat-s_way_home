@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do gatinho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class="som">
+        <audio id="backgroundMusic" autoplay loop src="midias/sons/musica_fundo.mp3"></audio>
+    </div>
+    
+    <div class="container">
+        <h1>Cat's Way Home</h1>
+        <h3>Help Kitten get home!</h3>
+        <div id="game-container">
+            <div id="cat"></div>
+            <div id="house"></div>
+        </div>
+        <div id="question-container">
+            <p id="question">Complete the sentence:</p>
+            <div id="choices">
+                <button class="choice-btn" onclick="checkAnswer('since')">Since</button>
+                <button class="choice-btn" onclick="checkAnswer('for')">For</button>
+                <button class="choice-btn" onclick="checkAnswer('already')">Already</button>
+                <button class="choice-btn" onclick="checkAnswer('just')">Just</button>
+                <button class="choice-btn" onclick="checkAnswer('yet')">Yet</button>
+            </div>
+        </div>
+        <div id="feedback"></div>
+    </div>
+
+    <audio id="correctSound" src="./midias/sons/resposta_correta.mp3"></audio>
+    <audio id="wrongSound"   src="./midias/sons/resposta_incorreta.mp3"></audio>
+    <audio id="victorySound" src="./midias/sons/parabens.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
