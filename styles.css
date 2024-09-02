@@ -9,6 +9,7 @@ body {
     padding: 20px;
     position: relative; /* Permite o uso de ::before */
     z-index: 1;
+    cursor: url('./midias/img/iconmonstr-cat-2-32.png'), default;
 }
 
 body::before {
@@ -20,6 +21,7 @@ body::before {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6); /* Fundo branco com transparência */
     z-index: -1; /* Fica atrás do conteúdo do body */
+   
 }
 
 
@@ -97,7 +99,7 @@ h3 {
     background-color: #172540;
     color: #fff;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: url('./midias/img/iconmonstr-cat-2-32.png'), default;
 }
 
 .choice-btn:hover {
